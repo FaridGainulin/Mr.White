@@ -1,0 +1,29 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      h1.main-section__title.font-w-b-black.font-s-46.text-up
+        | Зарабатывайте 
+        br.no-br
+        span.color-red от 367 000 ₽ ежемесячно 
+        br.no-br
+        | на услугах аппаратной 
+        br.no-br
+        | химчистки мягкой 
+        br.no-br
+        | мебели
+      .main-section__sub-title.font-w-medium.font-s-24
+        | Запустите работу бизнеса по 
+        br.no-br
+        | франшизе «Mr.White» 
+        span.color-red всего за 23 дня
+      .main-section__text.font-s-18
+        | Получите план открытия компании
+      form.main-section__form(data-feedback-form)
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn(type="submit") Получить
+        .main-section__agree-wrapper
+          include ../components/agree.pug
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1195" height="916" alt="image")

@@ -1,0 +1,75 @@
+section.about-section
+  .wrapper
+    .about-section__container
+      img.about-section__year-icon(src="images/about-section-year-icon.png" loading="lazy" width="980" height="129" alt="icon")
+      img.about-section__flash-icon(src="images/about-section-flash-icon.png" loading="lazy" width="471" height="381" alt="icon")
+      img.about-section__smoke-icon(src="images/about-section-smoke-icon.png" loading="lazy" width="1054" height="878" alt="icon")
+      h2.about-section__title.font-w-b-black.font-s-42.text-up.text-center
+        span.color-red «Mr.White»: 
+        | ведём успешную 
+        br.no-br
+        | работу с 2019 года
+      .about-section__sub-title.font-w-medium.font-s-24.text-center
+        | и готовы передать свой опыт вам!
+      .about-section__box
+        .about-section__box-text
+          .font-s-16
+            | Мы создали уникальную концепцию, которая выделяет нас 
+            br.no-br
+            | среди конкурентов, и она заключается не только в высоком 
+            br.no-br
+            | качестве оказания услуг, но и в сервисе и уникальном 
+            br.no-br
+            | подходе.
+            br
+            br
+            | Каждый шаг нашего клиента сопровождается приятным 
+            br.no-br
+            | общением, разрешением всех возможных вопросов 
+            br.no-br
+            | и максимальным профессионализмом мастеров.
+            br
+            br
+            | Которые приезжают на каждый заказ в брендированных 
+            br.no-br
+            | классических костюмах, всегда опрятны, свежи, вежливы 
+            br.no-br
+            | и выполняют работу быстро и качественно.
+            br
+            br
+          .about-section__box-text-item.font-w-bold.font-s-16
+            | Вместе с нами, вы откроете нетипичную компанию по 
+            br.no-br
+            | химчистке и сразу займете свое место на рынке услуг, 
+            br.no-br
+            | запустив все процессы бизнеса всего за 23 дня!
+        img.about-section__box-img(src="images/about-section-box-img.png" loading="lazy" width="1160" height="710" alt="image")
+      .about-section__feedback
+        .about-section__feedback-right
+          .font-w-medium.font-s-24
+            | Задайте любой вопрос 
+            span.color-red о работе франшизы
+          form.about-section__form(data-feedback-form)
+            input(type="text" name="honeyfield" class="honeypot" style="display:none")
+            textarea.input.input--textarea(type="text" name="answer" autocomplete="off" placeholder="Ваш вопрос")
+            input.input.input--secondary(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+            input.input.input--secondary(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+            button.btn(type="submit") Задать вопрос
+          .about-section__agree-wrapper
+            include ../components/agree.pug
+        img.about-section__feedback-img(src="images/about-section-feedback-img.png" loading="lazy" width="428" height="428" alt="image")
+  .about-section__wrapper
+    .swiper-desktop
+      .about-section__cards.swiper-wrapper
+        .about-section__card.swiper-slide
+          img.about-section__img(src="images/about-section-img-1.jpg" loading="lazy" width="1440" height="680" alt="image")
+        .about-section__card.swiper-slide
+          img.about-section__img(src="images/about-section-img-2.jpg" loading="lazy" width="1440" height="680" alt="image")
+        .about-section__card.swiper-slide
+          img.about-section__img(src="images/about-section-img-3.jpg" loading="lazy" width="1440" height="680" alt="image")
+      .desktop-pagination
+      .swiper-buttons-about
+        button.button-prev(aria-label="prev")
+          img(src="images/about-section-btn-prev.png" loading="lazy" width="16" height="26" alt="icon")
+        button.button-next(aria-label="next")
+          img(src="images/about-section-btn-next.png" loading="lazy" width="16" height="26" alt="icon")

@@ -1,0 +1,83 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      img.finances-section__icon(src="images/finances-section-icon.png" loading="lazy" width="1192" height="556" alt="icon")
+      h2.finances-section__title.font-w-b-black.font-s-42.text-up
+        | Откройте бизнес 
+        span.color-red в растущей нише
+      .finances-section__sub-title
+        img.finances-section__sub-title-icon(src="images/finances-section-sub-title-icon.svg" loading="lazy" width="24" height="24" alt="icon")
+        .font-s-18
+          | Только за последний год спрос на бытовые услуги 
+          br.no-br
+          span.font-w-bold вырос на 79% 
+          |  и эта цифра непрерывно растёт
+      .finances-section__box
+        .finances-section__box-right
+          .finances-section__box-right-text.font-w-medium.font-s-20
+            | Показатели, на которые вы можете рассчитывать, 
+            br.no-br
+            | став партнером нашей франшизы:
+          .swiper-finances
+            .finances-section__cards.swiper-wrapper
+              .finances-section__card.swiper-slide
+                .finances-section__card-line
+                .finances-section__card-title.font-w-b-bold 1 035 000 ₽
+                .font-s-16
+                  | ежемесячная 
+                  br.no-br
+                  | выручка
+              .finances-section__card.swiper-slide
+                .finances-section__card-line
+                .finances-section__card-title.font-w-b-bold от 3 000 ₽
+                .font-s-16
+                  | средний чек одного 
+                  br.no-br
+                  | клиента
+              .finances-section__card.swiper-slide
+                .finances-section__card-line
+                .finances-section__card-title.font-w-b-bold 367 000 ₽
+                .font-s-16
+                  | ежемесячная 
+                  br.no-br
+                  | чистая прибыль
+              .finances-section__card.swiper-slide
+                .finances-section__card-line
+                .finances-section__card-title.font-w-b-bold 7 месяцев
+                .font-s-16
+                  | срок окупаемости 
+                  br.no-br
+                  | бизнеса
+              .finances-section__card.swiper-slide
+                .finances-section__card-line
+                .finances-section__card-title.font-w-b-bold от 7 продаж
+                .font-s-16
+                  | будет совершаться 
+                  br.no-br
+                  | ежедневно
+              .finances-section__card.swiper-slide
+                .finances-section__card-line
+                .finances-section__card-title.font-w-b-bold 35,5%
+                .font-s-16
+                  | рентабельность 
+                  br.no-br
+                  | по чистой прибыли
+            .finances-pagination.swiper-progress-finances
+        img.finances-section__img(src="images/finances-section-img.jpg" loading="lazy" width="704" height="842" alt="image")
+      .finances-section__bottom
+        .finances-section__bottom-left
+          .font-w-medium.font-s-24
+            | Узнайте, 
+            span.color-red какие инвестиции 
+            | потребуются 
+            br.no-br
+            | для старта компании
+          .finances-section__bottom-text.font-s-18 Скачайте финансовую модель франшизы
+          form.finances-section__form(data-feedback-form)
+            input(type="text" name="honeyfield" class="honeypot" style="display:none")
+            input.input.input--secondary(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+            input.input.input--secondary(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+            button.btn(type="submit") Скачать
+          .finances-section__agree-wrapper
+            include ../components/agree.pug
+        img.finances-section__bottom-img(src="images/finances-section-bottom-img.jpg" loading="lazy" width="704" height="424" alt="image")

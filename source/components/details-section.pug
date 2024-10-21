@@ -1,0 +1,58 @@
+section.details-section
+  .wrapper
+    .details-section__container
+      .details-section__block-location
+        .details-section__block-location-text
+          .details-section__block-location-title.font-w-g-regular
+            span.font-w-g-bold Сделайте первый шаг, 
+            br.no-br
+            | узнайте лучшие места 
+            br.no-br
+            | для открытия РОДВИЛ
+          .font-s-20
+            | Просто укажите название вашего города 
+            br.no-br
+            | и получите список удачных локаций
+        form.details-section__form(data-city-form)
+          .input.js-input-city.details-item
+            input.input.details-item.input-city-position(type="text" name="city" autocomplete="off" placeholder="Название города")
+            .input__progress.js-input-city-progress
+              span.js-input-city-percent 0%
+          button.btn.details-item(type="submit") Получить список локаций
+      .details-section__box
+        h2.details-section__title.font-w-g-bold.font-s-44
+          | Почувствуйте себя 
+          br.no-br
+          | владельцем 
+          span.font-w-g-regular частной школы
+        .details-section__sub-title.font-w-g-regular.font-s-24
+          | Запишитесь на тест-драйв франшизы и вы узнаете:
+        .swiper-details
+          .details-section__cards.swiper-wrapper
+            .details-section__card.swiper-slide
+              .details-section__card-dot
+              .font-w-regular.font-s-18 Как вести документооборот
+            .details-section__card.swiper-slide
+              .details-section__card-dot
+              .font-w-regular.font-s-18 Как расширять клиентскую базу
+            .details-section__card.swiper-slide
+              .details-section__card-dot
+              .font-w-regular.font-s-18 Как работать с госучреждениями
+            .details-section__card.swiper-slide
+              .details-section__card-dot
+              .font-w-regular.font-s-18 Как организовать пространство школы
+            .details-section__card.swiper-slide
+              .details-section__card-dot
+              .font-w-regular.font-s-18 Как избежать ошибок на старте
+            .details-section__card.swiper-slide
+              .details-section__card-dot
+              .font-w-regular.font-s-18 Как всегда быть в курсе современных педагогических тенденций
+            .details-section__card.swiper-slide
+              .details-section__card-dot
+              .font-w-regular.font-s-18 Как и из чего будет формироваться ваша прибыль
+          .details-pagination.swiper-progress-details
+        img.details-section__img(src="images/details-section-img.png" loading="lazy" width="1240" height="1212" alt="image")
+        form.details-section__bottom-form(data-feedback-form)
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Записаться

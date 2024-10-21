@@ -1,0 +1,27 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      h2.city-section__title.font-w-b-black.font-s-46.text-up
+        | Станьте партнёром 
+        br.no-br
+        | франшизы 
+        span.color-red «Mr.White»
+      .city-section__sub-title.font-w-medium.font-s-24
+        | и зарабатывайте 
+        span.color-red от 4,4 млн рублей 
+        br
+        | чистой прибыли в год
+      .font-s-18
+        | Проверьте, свободен ли ваш город 
+        br
+        | для работы с нами
+      form.city-section__form(data-feedback-form)
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input(type="text" name="city" autocomplete="off" placeholder="Ваш город")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn(type="submit") Проверить
+        .city-section__agree-wrapper
+          include ../components/agree.pug
+  .wrapper
+    .city-section__footer-wrapper
+      include ../components/footer.pug

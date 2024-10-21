@@ -1,0 +1,88 @@
+.main-section
+  background-color #020205
+  background-image: url('../images/main-section-bg.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+
+  &__container
+    position relative
+    z-index 1
+    padding 15px 0 0 0
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+      padding 15px 0 70px 0
+    +above($breakpoints.md)
+      padding 20px 0 90px 0
+    +above($breakpoints.xxl)
+      padding 20px 0 159px 0
+
+  &__title
+    padding 20px 0 15px 0
+    +above($breakpoints.sm)
+      padding 50px 0 15px 0
+    +above($breakpoints.md)
+      padding 70px 0 20px 0
+    +above($breakpoints.xxl)
+      padding 87px 0 20px 0
+
+  &__text
+    padding 15px 0
+    +above($breakpoints.sm)
+      padding 20px 0 15px 0
+    +above($breakpoints.md)
+      padding 25px 0 20px 0
+    +above($breakpoints.xxl)
+      padding 36px 0 25px 0
+
+  &__form
+    width 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5px
+    +above($breakpoints.sm)
+      width 500px
+      flex-direction: row
+      flex-wrap: wrap
+      gap: 7px
+    +above($breakpoints.md)
+      gap: 10px
+    & > *
+      width 280px !important
+      +above($breakpoints.sm)
+        width 190px !important
+      +above($breakpoints.md)
+        width 220px !important
+      +above($breakpoints.xxl)
+        width 239px !important
+
+  &__agree-wrapper
+    display: flex
+    justify-content center
+    +above($breakpoints.sm)
+      justify-content start
+      padding-left 10px
+    +above($breakpoints.md)
+      padding-left 20px
+    +above($breakpoints.xxl)
+      padding-left 32px
+
+  &__img
+    width 308px
+    height: auto
+    margin: 0 0 0 -11px;
+    +above($breakpoints.sm)
+      margin 0
+      position: absolute
+      z-index: -1
+      width: 732px;
+      bottom: 0;
+      right: -137px;
+    +above($breakpoints.md)
+      width 900px
+      right: -240px
+    +above($breakpoints.xxl)
+      width 1195px
+      right: -289px

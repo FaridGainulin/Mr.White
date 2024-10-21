@@ -1,0 +1,105 @@
+.invest-section
+  // background-image: url('../images/invest-section-bg.jpg')
+  // background-repeat: no-repeat
+  // background-position: center
+  // background-size: cover
+  background: linear-gradient(157deg, #fff 0%, #e2e8ea 100%);
+
+  &__container
+    position relative
+    text-align: center
+    color: #363067
+    padding 20px 0 1px 0
+    +above($breakpoints.sm)
+      padding 60px 0 60px 0
+    +above($breakpoints.md)
+      padding 90px 0 90px 0
+    +above($breakpoints.xxl)
+      padding 100px 0 115px 0
+
+  &__sub-title
+    padding 15px 0 15px 0
+    +above($breakpoints.sm)
+      padding 20px 0 30px 0
+    +above($breakpoints.md)
+      padding 25px 0 50px 0
+    +above($breakpoints.xxl)
+      padding 31px 0 61px 0
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      justify-content center
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 20px
+
+  &__card
+    width 280px !important
+    border-radius: 10px
+    padding 15px 15px 20px 15px
+    background-color #A1DFE5
+    +above($breakpoints.sm)
+      border-radius: 15px
+      width 235px !important
+      padding 10px 10px 30px 10px
+    +above($breakpoints.md)
+      border-radius: 20px
+      width 308px !important
+      padding 15px 15px 40px 15px
+    +above($breakpoints.xxl)
+      width 380px !important
+      height: 380px
+      padding 20px 20px 55px 20px
+
+  &__card-2
+    background: linear-gradient(145deg, #a1dfe5 0%, #42c09b 100%);
+
+  &__card-3
+    background: linear-gradient(147deg, #00acbd 0%, #342893 100%);
+
+  &__card-title
+    width 100%
+    height: 80px
+    background-color #fff
+    border-radius: 10px
+    display: flex
+    flex-direction: column
+    justify-content center
+    align-items: center
+    gap: 5px
+    +above($breakpoints.sm)
+      border-radius: 15px
+      height: 95px
+      gap: 8px
+    +above($breakpoints.md)
+      border-radius: 20px
+      height: 120px
+      gap: 10px
+    +above($breakpoints.xxl)
+      gap: 12px
+      height: 140px
+
+  &__card-icon
+    width 20px
+    height: auto
+    margin 20px auto 15px
+    +above($breakpoints.sm)
+      width 24px
+      margin 30px auto 20px
+    +above($breakpoints.md)
+      width 28px
+      margin 35px auto 25px
+    +above($breakpoints.xxl)
+      width 32px
+      margin 40px auto 28px
+
+  &__btn
+    width 210px !important
+    margin 0 auto
+    +above($breakpoints.sm)
+      width 190px !important
+    +above($breakpoints.md)
+      width 240px !important
+    +above($breakpoints.xxl)
+      width 280px !important
