@@ -1,0 +1,302 @@
+.twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after, .twentytwenty-vertical .twentytwenty-handle:before, .twentytwenty-vertical .twentytwenty-handle:after {
+  content: " ";
+  display: block;
+  background: white;
+  position: absolute;
+  z-index: 30;
+  -webkit-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+  -moz-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+  box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5); }
+
+.twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after {
+  width: 2px;
+  height: 9999px;
+  left: 50%;
+  margin-left: -1.5px; }
+
+.twentytwenty-vertical .twentytwenty-handle:before, .twentytwenty-vertical .twentytwenty-handle:after {
+  width: 9999px;
+  height: 2px;
+  top: 50%;
+  margin-top: -1.5px; }
+
+.twentytwenty-before-label, .twentytwenty-after-label, .twentytwenty-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+
+.twentytwenty-before-label, .twentytwenty-after-label, .twentytwenty-overlay {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+
+.twentytwenty-before-label, .twentytwenty-after-label {
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  transition-property: opacity; }
+
+.twentytwenty-before-label:before, .twentytwenty-after-label:before
+  color: white;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  +above($breakpoints.sm)
+    font-size: 12px;
+  +above($breakpoints.md)
+    font-size: 14px;
+  +above($breakpoints.xxl)
+    font-size: 16px;
+
+.twentytwenty-before-label:before, .twentytwenty-after-label:before
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  line-height: 20px;
+  padding: 0 5px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  +above($breakpoints.sm)
+    line-height: 30px;
+    padding: 0 10px;
+  +above($breakpoints.md)
+    line-height: 34px;
+    padding: 0 15px;
+  +above($breakpoints.xxl)
+    line-height: 38px;
+    padding: 0 20px;
+
+.twentytwenty-horizontal .twentytwenty-before-label:before, .twentytwenty-horizontal .twentytwenty-after-label:before {
+  top: 50%;
+  margin-top: -19px; }
+
+.twentytwenty-vertical .twentytwenty-before-label:before, .twentytwenty-vertical .twentytwenty-after-label:before {
+  left: 50%;
+  margin-left: -45px;
+  text-align: center;
+  width: 90px; }
+
+.twentytwenty-up-arrow, .twentytwenty-down-arrow {
+  width: 0;
+  height: 0;
+  border: 6px inset transparent;
+  position: absolute; }
+
+// .twentytwenty-left-arrow, .twentytwenty-right-arrow {
+//   top: 50%;
+//   margin-top: -6px; }
+
+.twentytwenty-up-arrow, .twentytwenty-down-arrow {
+  left: 50%;
+  margin-left: -6px; }
+
+.twentytwenty-container {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+  .twentytwenty-container img {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    display: block; }
+  .twentytwenty-container.active .twentytwenty-overlay, .twentytwenty-container.active :hover.twentytwenty-overlay {
+    background: rgba(0, 0, 0, 0); }
+    .twentytwenty-container.active .twentytwenty-overlay .twentytwenty-before-label,
+    .twentytwenty-container.active .twentytwenty-overlay .twentytwenty-after-label, .twentytwenty-container.active :hover.twentytwenty-overlay .twentytwenty-before-label,
+    .twentytwenty-container.active :hover.twentytwenty-overlay .twentytwenty-after-label {
+      opacity: 0; }
+  .twentytwenty-container * {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box; }
+
+.twentytwenty-before-label {
+  opacity: 0; }
+  .twentytwenty-before-label:before
+    // content: attr(data-content);
+    content: "После"
+    font-family 'STYRENEAWEB-LIGHT'
+
+.twentytwenty-after-label {
+  opacity: 0; }
+  .twentytwenty-after-label:before
+    // content: attr(data-content);
+    content: "До"
+    font-family 'STYRENEAWEB-LIGHT'
+
+.twentytwenty-horizontal .twentytwenty-before-label:before {
+  left: 10px; }
+
+.twentytwenty-horizontal .twentytwenty-after-label:before {
+  right: 10px; }
+
+.twentytwenty-vertical .twentytwenty-before-label:before {
+  top: 10px; }
+
+.twentytwenty-vertical .twentytwenty-after-label:before {
+  bottom: 10px; }
+
+.twentytwenty-overlay {
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  transition-property: background;
+  background: rgba(0, 0, 0, 0);
+  z-index: 25; }
+  .twentytwenty-overlay:hover {
+    background: rgba(0, 0, 0, 0.5); }
+    .twentytwenty-overlay:hover .twentytwenty-after-label {
+      opacity: 1; }
+    .twentytwenty-overlay:hover .twentytwenty-before-label {
+      opacity: 1; }
+
+.twentytwenty-before {
+  z-index: 20; }
+
+.twentytwenty-after {
+  z-index: 10; }
+
+.twentytwenty-handle
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 50%;
+  top: 91%;
+  margin-left: -15px;
+  margin-top: -22px;
+  // border: 3px solid white;
+  background-color #D11C17
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  border-radius: 1000px;
+  -webkit-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+  -moz-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+  box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+  z-index: 40;
+  cursor: pointer;
+  +above($breakpoints.sm)
+    margin-left: -22px;
+    width: 45px
+    height: 45px
+  +above($breakpoints.md)
+    margin-left: -26px;
+    width: 50px
+    height: 50px
+  +above($breakpoints.xxl)
+    margin-left: -28px;
+    width: 55px
+    height: 55px
+  +above($breakpoints.xxxl)
+    margin-left: -30px;
+    width: 62px
+    height: 62px
+
+.twentytwenty-horizontal .twentytwenty-handle:before
+  bottom: 36%;
+  margin-bottom: 22px;
+  -webkit-box-shadow: 0 3px 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+  -moz-box-shadow: 0 3px 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+  box-shadow: 0 3px 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+  +above($breakpoints.sm)
+    bottom: 56%;
+  +above($breakpoints.md)
+    bottom: 62%;
+  +above($breakpoints.xxl)
+    bottom: 65%;
+  +above($breakpoints.xxxl)
+    bottom: 69%;
+.twentytwenty-horizontal .twentytwenty-handle:after
+  top: 39%;
+  margin-top: 22px;
+  -webkit-box-shadow: 0 -3px 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+  -moz-box-shadow: 0 -3px 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+  box-shadow: 0 -3px 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+  +above($breakpoints.sm)
+    top: 58%;
+  +above($breakpoints.md)
+    top: 61%;
+  +above($breakpoints.xxl)
+    top: 65%;
+  +above($breakpoints.xxxl)
+    top: 69%;
+.twentytwenty-vertical .twentytwenty-handle:before {
+  left: 50%;
+  margin-left: 22px;
+  -webkit-box-shadow: 3px 0 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+  -moz-box-shadow: 3px 0 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+  box-shadow: 3px 0 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5); }
+.twentytwenty-vertical .twentytwenty-handle:after {
+  right: 50%;
+  margin-right: 22px;
+  -webkit-box-shadow: -3px 0 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+  -moz-box-shadow: -3px 0 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+  box-shadow: -3px 0 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5); }
+
+.twentytwenty-left-arrow
+  position: absolute
+  background-image: url('../images/twentytwenty-arrow.png')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  transform: translateY(-50%)
+  width: 6px;
+  height: 9px;
+  top: 50%;
+  left: 12%;
+  +above($breakpoints.sm)
+    width: 9px
+    height: 14px
+    left: 20%
+  +above($breakpoints.md)
+    width: 9px
+    height: 14px
+    left: 20%
+  +above($breakpoints.xxl)
+    width: 9px
+    height: 14px
+    left: 22%
+
+.twentytwenty-right-arrow
+  position: absolute
+  background-image: url('../images/twentytwenty-arrow.png')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  transform: rotate(180deg) translateY(-50%)
+  width: 6px;
+  height: 9px;
+  top: 22%;
+  right: 12%;
+  +above($breakpoints.sm)
+    width: 9px
+    height: 14px
+    top: 19%
+    right: 20%
+  +above($breakpoints.md)
+    width: 9px
+    height: 14px
+    top: 21%
+    right: 20%
+  +above($breakpoints.xxl)
+    width: 9px
+    height: 14px
+    top: 25%
+    right: 22%
+  +above($breakpoints.xxxl)
+    width: 9px
+    height: 14px
+    top: 27%
+
+.twentytwenty-up-arrow {
+  border-bottom: 6px solid white;
+  top: 50%;
+  margin-top: -17px; }
+
+.twentytwenty-down-arrow {
+  border-top: 6px solid white;
+  bottom: 50%;
+  margin-bottom: -17px; }
